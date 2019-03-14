@@ -28,7 +28,8 @@ public class App
     public static void main( String[] args )
     {
     	List<Employee> list = csvToBean("E:/emp.csv");
-        for(Employee e : list) {
+        //Mapping Begins
+    	for(Employee e : list) {
         	System.out.print(e.getId() + " " + e.getName() + " " + e.getCity() + "\n");
         }
     }
